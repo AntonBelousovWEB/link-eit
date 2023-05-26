@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans&display=swap');
+
+body {
+  background: url(/img/background/bg.svg);
+}
+
+.row_container {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #C1D1ED;
+  border-radius: 17px;
+}
+
+:root {
+  --open-sans: 'Open Sans', sans-serif;
+  --krona-one: 'Krona One', sans-serif;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.box-suc {
+  padding: 10px 62px;
+  background-color: #fff;
+  border: 2px solid #007505;
+  border-radius: 60px;
+  display: none;
+  animation: slide-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.title-box_suc {
+  font-family: var(--open-sans);
+  font-size: 16px;
+}
+
+.text-header__container {
+  position: relative;
+  max-width: 315px;
+}
+
+.text-header__container {
+  margin-bottom: 190px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.text-header {
+  font-family: var(--krona-one);
+  font-size: 40px;
+}
+
+.text-header_one {
+  justify-content: start;
+}
+.text-header_two {
+  justify-content: end;
+}
+.text-header_three {
+  justify-content: center;
+}
+
+.container_input {
+  max-width: 365px;
+}
+
+.error-link {
+  font-family: var(--open-sans);
+  font-size: 16px;
+  color: #FF0000;
+  display: none;
+}
+
+.row-inpt {
+  max-width: 365px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.row-inpt:not(:first-child) {
+  justify-content: end;
+}
+
+input[type="text"] {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-right: 150px;
+  border-radius: 8px;
+  font-family: var(--open-sans);
+  font-size: 16px;
+  border: 2px solid;
+  border-color: #000;
+}
+
+button {
+  position: absolute;
+  padding: 13px 35px;
+  margin: 10px;
+  background-color: #0B1E42;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: var(--open-sans);
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+#shortenedURL {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#copy {
+  display: none;
+}
+
+#short {
+  display: block;
+}

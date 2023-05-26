@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Shortener</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <div class="row_container">
+    <div class="container">
+      <div id="box" class="box-suc">
+        <h1 class="title-box_suc">Link copied👌</h1>
+      </div>
+      <div class="text-header__container">
+        <h1 class="text-header_one display-flex text-header">We make</h1>
+        <h1 class="text-header_two display-flex text-header">links</h1>
+        <h1 class="text-header_three display-flex text-header">easier</h1>
+      </div>
+      <div class="container_input">
+        <h1 id="error" class="error-link">Wrong link</h1>
+        <div class="row-inpt">
+          <input type="text" id="originalURL" placeholder="Enter URL">
+          <button id="short" onclick="shortenURL()">Shorten</button>
+          <button id="copy" onclick="CopyURL()">Copy</button>
+        </div>
+      </div>
+      <div id="shortenedURL"></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
